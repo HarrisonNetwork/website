@@ -32,51 +32,6 @@
 
         <hr>
 
-        <section id="tunnels">
-            <h1>Tunneling Service</h1>
-            <p>An <a href="https://wdh.gg/ngrok">ngrok</a>-like tunneling system running <a href="https://wdh.gg/sish">sish</a>. You can request access by emailing <a href="mailto:tunnels@hrsn.net">tunnels@hrsn.net</a>.</p>
-
-            <p>You can see the status of the tunneling service on our <a href="https://wdh.gg/status/sish">status page</a>.</p>
-            <p>Contact <a href="mailto:abuse@hrsn.net">abuse@hrsn.net</a> for abuse of the tunneling system.</p>
-
-            <h2>Default Subdomains</h2>
-
-            <ul>
-                <li><code>*.t.hrsn.net</code> - HTTP, SSH, TCP tunnel support.</li>
-                <li><code>*.t.hrsn.dev</code> - HTTP tunnel support.</li>
-            </ul>
-
-            <!-- <h3>Private Tunneling Domains (custom domains)</h3>
-            <p>Contact us at <a href="mailto:tunnels@hrsn.net">tunnels@hrsn.net</a> to add your own private tunneling domain for use with our service.</p> -->
-
-            <h2>Usage</h2>
-
-            <p>Creating a tunnel using a default, auto-generated subdomain on <code>t.hrsn.net</code> which connects to <code>http://localhost:3000</code></p>
-            <p>Change <code>localhost:3000</code> in the below command to the connection your local web server is running on.</p>
-            <code>ssh -R 80:localhost:3000 t.hrsn.net -p 2222 -i "PATH/TO/SSH/KEY"</code>
-
-            <h3>Choosing a custom subdomain</h3>
-            
-            <p>Creating a tunnel which uses <code>localwebsite.t.hrsn.net</code> which connects to <code>http://localhost:3000</code></p>
-            <code>ssh -R localwebsite:80:localhost:3000 t.hrsn.net -p 2222 -i "PATH/TO/SSH/KEY"</code>
-
-            <h3>Using a domain other than <code>t.hrsn.net</code></h3>
-
-            <p>To use another default domain such as <code>t.hrsn.dev</code>, append <code>.t.hrsn.dev</code> to the subdomain you want as shown in the command below.</p>
-            <code>ssh -R localwebsite.t.hrsn.dev:80:localhost:3000 t.hrsn.net -p 2222 -i "PATH/TO/SSH/KEY"</code>
-
-            <!-- <h3>Using your own Private Tunneling Domain (PTD)</h3>
-
-            <p>To use your custom domain, it is similar to using a different default domain like we showed above. Replace <code>example.com</code> with your PTD.</p>
-            <code>ssh -R localwebsite.example.com:80:localhost:3000 t.hrsn.net -p 2222 -i "PATH/TO/SSH/KEY"</code> -->
-
-            <h2>Advanced Usage</h2>
-            <p>For more advanced usage such as TCP tunnels, SSH forwarding and more, you can read through the <a href="https://wdh.gg/sish-docs">sish docs</a> for more information.</p>
-            <p>If you require any help or would like a custom solution, please contact us at <a href="mailto:tunnels@hrsn.net">tunnels@hrsn.net</a>.</p>
-        </section>
-
-        <hr>
-
         <footer>
             <p>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://wdharrison.com">William Harrison</a> - All Rights Reserved.</p>
         </footer>
